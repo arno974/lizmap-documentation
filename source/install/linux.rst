@@ -50,6 +50,11 @@ Installing necessary packages
    a2enmod headers
    a2enmod deflate
    service apache2 restart # restart Apache server
+   
+As qgis-server works using cgi do not forget to activate it in your apache configuration :
+
+.. code-block:: bash
+   sudo a2enmod cgi
 
 php7 configuration
 ------------------
